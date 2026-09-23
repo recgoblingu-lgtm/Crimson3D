@@ -1,24 +1,79 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free Crimson3D models." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crimson3D</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header shell"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>CRIMSON<span class="brand-muted">3D</span></span></a><nav class="main-nav" aria-label="Main navigation"><a href="#models">Models</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a class="header-cta" href="#models">Download</a></header>
+  <header class="site-header">
+    <!-- CHANGE: website name -->
+    <a class="logo" href="index.html">Crimson3D</a>
+    <nav>
+      <a href="#models">Models</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <main>
-    <section class="hero shell"><div class="hero-copy"><h1>Crimson3D</h1><p class="hero-lede">Free 3D models for Roblox and game projects.</p><a class="button button-primary" href="#models">View models <span>↓</span></a></div><div class="hero-art"><img src="assets/rivals_pistol_preview.png" alt="Crimson3D pistol model" /></div></section>
-    <section id="models" class="models-section shell section-pad"><div class="section-heading"><h2>Models</h2><p class="section-note">Free to download.</p></div><div class="model-list">
-      <article class="model-card"><div class="model-image"><img src="assets/roblox_sword_preview.png" alt="Crimson Blade sword model" /></div><div class="model-info"><p class="model-number">001 / WEAPON</p><h3>Crimson Blade</h3><p>Low-poly sword with separate named parts for Roblox Studio.</p><div class="model-meta"><span>GLB · OBJ</span><span>16 PARTS</span></div><div class="download-row"><a class="button button-dark" href="assets/roblox_sword.glb" download>GLB <span>↓</span></a><a class="button button-outline" href="assets/roblox_sword.obj" download>OBJ <span>↓</span></a></div></div></article>
-      <article class="model-card"><div class="model-image"><img src="assets/rivals_pistol_preview.png" alt="Crimson3D pistol model" /></div><div class="model-info"><p class="model-number">002 / WEAPON</p><h3>Rivals Pistol</h3><p>Original competitive-shooter-inspired sidearm rebuilt in Blender with beveled hard-surface details and studio materials.</p><div class="model-meta"><span>GLB · OBJ · BLEND</span><span>FREE</span></div><div class="download-row"><a class="button button-dark" href="assets/rivals_pistol.glb" download>GLB <span>↓</span></a><a class="button button-outline" href="assets/rivals_pistol.obj" download>OBJ <span>↓</span></a><a class="button button-outline" href="assets/rivals_pistol.blend" download>BLEND <span>↓</span></a></div></div></article>
-    </div></section>
-    <section id="about" class="about-section section-pad"><div class="shell about-grid"><h2>About</h2><div class="about-copy"><p>Crimson3D makes simple, usable 3D assets for creators.</p><p>Download the files, use them in your projects, and modify them as needed.</p></div></div></section>
-    <section id="contact" class="contact-section shell section-pad"><div class="contact-card"><h2>Contact</h2><p>For questions, custom work, or licensing.</p><a class="button button-primary" href="mailto:contact@crimson3d.dev">contact@crimson3d.dev <span>↗</span></a></div></section>
+    <section class="intro">
+      <!-- CHANGE: short intro text -->
+      <p class="label">3D models</p>
+      <h1>Simple models for your projects.</h1>
+      <p class="muted">Free assets for Roblox, games, and personal projects.</p>
+    </section>
+
+    <section id="models" class="models">
+      <div class="section-title"><h2>Models</h2><span>Free downloads</span></div>
+      <div class="model-grid">
+        <!-- COPY THIS ENTIRE ARTICLE TO ADD ANOTHER MODEL -->
+        <article class="model-card">
+          <!-- CHANGE: image path, model name, description, and download links -->
+          <div class="model-image placeholder-image">Add image here</div>
+          <div class="model-content">
+            <p class="label">01 / MODEL</p>
+            <h3>Model name</h3>
+            <p class="muted">Short description of the model goes here.</p>
+            <div class="downloads">
+              <a href="assets/model.glb" download>GLB ↓</a>
+              <a href="assets/model.obj" download>OBJ ↓</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- EXAMPLE: replace or delete this card -->
+        <article class="model-card">
+          <div class="model-image placeholder-image">Add image here</div>
+          <div class="model-content">
+            <p class="label">02 / MODEL</p>
+            <h3>Another model</h3>
+            <p class="muted">Replace this text with your model information.</p>
+            <div class="downloads">
+              <a href="assets/another-model.glb" download>GLB ↓</a>
+              <a href="assets/another-model.obj" download>OBJ ↓</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="simple-section">
+      <!-- CHANGE: about text -->
+      <h2>About</h2>
+      <p class="muted">A short sentence about you or your models.</p>
+    </section>
+
+    <section id="contact" class="simple-section">
+      <!-- CHANGE: contact email -->
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
   </main>
-  <footer class="site-footer shell"><span>© 2026 Crimson3D</span><span>Free models</span></footer>
+
+  <footer>
+    <!-- CHANGE: year or footer text -->
+    <span>© 2026 Crimson3D</span>
+  </footer>
 </body>
 </html>
