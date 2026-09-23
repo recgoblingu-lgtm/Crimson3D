@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crimson - About Me</title>
+
+<style>
+:root{--bg:#101010;--panel:#181818;--line:#2d2d2d;--text:#f2f2f0;--muted:#8b8b87;--accent:#cf3344;--font:Arial,Helvetica,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 var(--font)}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}.site-header,main,footer{width:min(960px,calc(100% - 40px));margin:auto}.site-header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}.logo{font-size:18px;font-weight:700}.site-header nav{display:flex;gap:20px;color:var(--muted);font-size:13px}.intro{padding:110px 0 100px;max-width:620px}.label{margin:0 0 14px;color:var(--accent);font-size:11px;letter-spacing:.12em;text-transform:uppercase}.intro h1{max-width:600px;margin:0 0 16px;font-size:clamp(40px,7vw,72px);line-height:1.02;letter-spacing:-.06em}.muted{color:var(--muted)}.intro .muted{font-size:18px}.models{border-top:1px solid var(--line);padding:70px 0}.section-title{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px}.section-title h2,.simple-section h2{margin:0;font-size:28px;letter-spacing:-.04em}.section-title span{color:var(--muted);font-size:12px}.model-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.model-card{background:var(--panel);border:1px solid var(--line)}.model-image{height:260px;display:grid;place-items:center;background:#202020;color:#666;font-size:12px;border-bottom:1px solid var(--line);overflow:hidden}.model-image img{width:100%;height:100%;object-fit:cover;display:block}.placeholder-image{border-bottom:1px solid var(--line)}.model-content{padding:24px}.model-content h3{margin:0 0 8px;font-size:24px}.model-content p:not(.label){margin:0}.downloads{display:flex;gap:8px;margin-top:24px}.downloads a{padding:10px 12px;border:1px solid #4b4b4b;color:var(--text);font-size:12px}.downloads a:hover{border-color:var(--accent);color:var(--accent)}.simple-section{padding:70px 0;border-top:1px solid var(--line)}.simple-section p{margin:15px 0 0}.simple-section a{color:var(--text);text-decoration:underline;text-underline-offset:3px}footer{padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}@media(max-width:650px){.site-header,main,footer{width:calc(100% - 28px)}.intro{padding:75px 0}.model-grid{grid-template-columns:1fr}.model-image{height:220px}}
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="logo">Crimson</div>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <p class="label">ABOUT ME</p>
+    <h1>Developer</h1>
+    <p class="muted">
+      I’m Crimson, a developer focused on building systems, tools, and experimental platforms.
+      Most of my work revolves around projects like RecLora, DreamRec, and ArphixAI — combining backend logic,
+      web development, and creative system design. I like building scalable ideas from scratch and turning them into working products.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="simple-section">
+    <h2>Skills</h2>
+    <p class="muted">
+      Coding • Web Development • Backend Systems • C# • 3D Modeling
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="models">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <span>Selected work</span>
+    </div>
+
+    <div class="model-grid">
+
+      <div class="model-card">
+        <div class="model-image">RecLora</div>
+        <div class="model-content">
+          <h3>RecLora</h3>
+          <p class="muted">A Rec Room revival Project.</p>
+          <div class="downloads">
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-image">DreamRec</div>
+        <div class="model-content">
+          <h3>DreamRec</h3>
+          <p class="muted">An experimental archive + simulation system designed to store and recreate large-scale digital environments and data structures.</p>
+          <div class="downloads">
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="model-card">
+        <div class="model-image">ArphixAI</div>
+        <div class="model-content">
+          <h3>ArphixAI</h3>
+          <p class="muted">A modular AI agent system built for custom personalities, coding assistance, and expandable tool-based workflows.</p>
+          <div class="downloads">
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="simple-section">
+    <h2>Contact</h2>
+    <p class="muted">
+      GitHub: <a href="https://github.com/recgoblingu-lgtm">recgoblingu-lgtm</a><br>
+      Discord: reccrimson
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Crimson — Developer Portfolio
+</footer>
+
+</body>
+</html>
