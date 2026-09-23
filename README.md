@@ -1,32 +1,16 @@
 # Crimson3D
 
-Minimal storefront for Crimson3D 3D assets. The first product is the **Crimson Blade**, using the GLB sword asset in `assets/` and the rendered preview image.
+Minimal dark site for free 3D model downloads.
 
-## Cloudflare Pages setup — no npm required
+## Models
 
-This repository is ready for a Cloudflare Pages GitHub deployment. Use these settings in the Cloudflare Pages project:
+- **Crimson Blade** — `assets/roblox_sword.glb` and `assets/roblox_sword.obj`
+- **Rivals Pistol** — `assets/rivals_pistol.glb` and `assets/rivals_pistol.obj`
 
-- **Production branch:** `main`
-- **Build command:** leave blank, or use `exit 0`
-- **Build output directory:** `/` or `.` (the repository root)
-- **Root directory:** `/`
+The pistol is an original competitive-shooter-inspired model, not a direct copy of an existing game asset. Both models are free to download and use in projects.
 
-Cloudflare will serve the HTML/CSS/JS directly and will deploy the function in `functions/api/order.js` automatically. Pages Functions are Cloudflare's server-side handlers for form submissions and other dynamic behavior, so there is no Node server to run.
+## Cloudflare Pages
 
-## Discord webhook setup
+Use the repository root as the build output directory with no build command. Cloudflare Pages will serve the static files directly. The existing `functions/api/order.js` remains available for the contact/request form if you use `buy.html`.
 
-In the Cloudflare Pages project, open **Settings → Variables and Secrets** and add this encrypted variable for both Production and Preview if desired:
-
-```text
-DISCORD_WEBHOOK_URL = your Discord webhook URL
-```
-
-Do not put the real webhook URL in `buy.js`, HTML, or any committed file. The browser posts to `/api/order`; the Cloudflare Function validates the form and sends the formatted message to Discord using the encrypted secret.
-
-## Customize
-
-- Replace `contact@crimson3d.dev` in `index.html` and `buy.html` with the real contact address.
-- Edit the product price and copy in `index.html`.
-- Add more product cards and detail pages as the library grows.
-
-The checkout page is an inquiry form, not a payment processor. Add a payment provider only after deciding on your business and refund workflow.
+Replace `contact@crimson3d.dev` in the HTML files with the real contact address.
