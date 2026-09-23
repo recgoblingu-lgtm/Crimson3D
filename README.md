@@ -5,9 +5,9 @@ Minimal dark site for free 3D model downloads.
 ## Models
 
 - **Crimson Blade** — `assets/roblox_sword.glb` and `assets/roblox_sword.obj`
-- **Rivals Pistol** — `assets/rivals_pistol.glb` and `assets/rivals_pistol.obj`
+- **Rivals Pistol** — `assets/rivals_pistol.glb`, `assets/rivals_pistol.obj`, and editable `assets/rivals_pistol.blend`
 
-The pistol is an original competitive-shooter-inspired model, not a direct copy of an existing game asset. Both models are free to download and use in projects.
+The pistol is an original competitive-shooter-inspired model, rebuilt in Blender with hard-surface bevels, layered metal materials, grip texture, recessed details, and studio lighting. It is not a direct copy of an existing game asset. Both models are free to download and use in projects.
 
 ## Cloudflare Pages
 
