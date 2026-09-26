@@ -1,32 +1,18 @@
 # Crimson3D
 
-A very small static website. No npm, build command, or server is required.
+A very small static website. 
+This websites use is to show games, models (MOST ARE FREE) and show me and my friends potential at modeling, making games, and helping other developers thrive!
 
-## Edit the site
 
-Open `index.html` and search for `CHANGE` to find the main editable areas:
+# Discord Info
+Discord Username : @rozoctagon
 
-- Site name and intro text
-- Model names and descriptions
-- Download file paths
-- About text
-- Contact email
-- Footer text
 
-To add a model, copy one complete `<article class="model-card">...</article>` block in `index.html`, then change its text, image, and download links.
+If you have any questions dm me on discord or email me at 
+recgoblingu@gmail.com
 
-Put model files inside `assets/`. Example:
+or my personal emails
+zerobwu@gmail.com
 
-```html
-<a href="assets/my-model.glb" download>GLB ↓</a>
-```
-
-The two starter cards are placeholders. Replace them or delete them.
-
-## Cloudflare Pages
-
-Connect this repository to Cloudflare Pages with:
-
-- Build command: blank
-- Build output directory: `.`
-- Root directory: `/`
+Please note that if it takes a long time for me to respond email wise, slide me a message on discord.
+Thank you!
