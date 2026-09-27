@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crimson3D tutorials for Blender, GLB exports, and Roblox asset creation.">
+  <title>Crimson3D — Tutorials</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .tutorial-intro {
+      padding-bottom: 64px;
+    }
+
+    .tutorials {
+      border-top: 1px solid var(--line);
+      padding: 70px 0;
+    }
+
+    .tutorial-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .tutorial-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .video-frame {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #202020;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .tutorial-content {
+      padding: 24px;
+    }
+
+    .tutorial-content h3 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      letter-spacing: -0.04em;
+    }
+
+    .tutorial-content p:not(.label) {
+      margin: 0;
+    }
+
+    .watch-link {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 10px 12px;
+      border: 1px solid #4b4b4b;
+      font-size: 12px;
+    }
+
+    .watch-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .note {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 650px) {
+      .tutorial-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Crimson3D</a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html#models">Models</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro tutorial-intro">
+      <p class="label">Learn the workflow</p>
+
+      <h1>Tutorials for making better assets.</h1>
+
+      <p class="muted">
+        Watch Blender, GLB, and Roblox modeling tutorials without leaving the site.
+      </p>
+    </section>
+
+    <section class="tutorials">
+      <div class="section-title">
+        <h2>Featured tutorials</h2>
+        <span>06 videos</span>
+      </div>
+
+      <div class="tutorial-grid">
+
+        <article class="tutorial-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/SAcHh9_ZG6A"
+              title="3D Modeling for Beginners"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="tutorial-content">
+            <p class="label">01 / BEGINNER</p>
+            <h3>3D Modeling for Beginners</h3>
+            <p class="muted">
+              Learn the core Blender modeling tools from scratch.
+            </p>
+
+            <a
+              class="watch-link"
+              href="https://www.youtube.com/watch?v=SAcHh9_ZG6A"
+              target="_blank"
+              rel="noopener">
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/Ci3Has4L5W4"
+              title="Blender Tutorial for Beginners"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="tutorial-content">
+            <p class="label">02 / FUNDAMENTALS</p>
+            <h3>Blender Fundamentals</h3>
+            <p class="muted">
+              Learn the Blender interface and basic workflow.
+            </p>
+
+            <a
+              class="watch-link"
+              href="https://www.youtube.com/watch?v=Ci3Has4L5W4"
+              target="_blank"
+              rel="noopener">
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/0BR37QZZQno"
+              title="How to export to GLB from Blender"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="tutorial-content">
+            <p class="label">03 / EXPORT</p>
+            <h3>Export Blender Models to GLB</h3>
+            <p class="muted">
+              Prepare and export a model for web, AR, VR, and games.
+            </p>
+
+            <a
+              class="watch-link"
+              href="https://www.youtube.com/watch?v=0BR37QZZQno"
+              target="_blank"
+              rel="noopener">
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/UjZHIpaWADo"
+              title="Blender GLB and glTF export tutorial"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="tutorial-content">
+            <p class="label">04 / GLTF</p>
+            <h3>GLB and glTF Import / Export</h3>
+            <p class="muted">
+              Understand the GLB workflow and use models in other 3D spaces.
+            </p>
+
+            <a
+              class="watch-link"
+              href="https://www.youtube.com/watch?v=UjZHIpaWADo"
+              target="_blank"
+              rel="noopener">
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/6YlWYGVo7KI"
+              title="How to 3D model Roblox characters in Blender"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="tutorial-content">
+            <p class="label">05 / ROBLOX</p>
+            <h3>Model Roblox Characters</h3>
+            <p class="muted">
+              Learn Blender modeling for Roblox-style character assets.
+            </p>
+
+            <a
+              class="watch-link"
+              href="https://www.youtube.com/watch?v=6YlWYGVo7KI"
+              target="_blank"
+              rel="noopener">
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="tutorial-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/V1q5w6onuCE"
+              title="How to import a GLB into Blender"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="tutorial-content">
+            <p class="label">06 / IMPORT</p>
+            <h3>Import a GLB into Blender</h3>
+            <p class="muted">
+              Open downloaded GLB assets and edit them in Blender.
+            </p>
+
+            <a
+              class="watch-link"
+              href="https://www.youtube.com/watch?v=V1q5w6onuCE"
+              target="_blank"
+              rel="noopener">
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="note">
+        Videos are embedded from YouTube. If a video becomes unavailable,
+        use the Watch on YouTube link on that card.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Crimson3D</span>
+  </footer>
+</body>
+</html>
