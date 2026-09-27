@@ -65,4 +65,17 @@ footer{padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   .intro{padding:75px 0}
   .model-grid{grid-template-columns:1fr}
   .model-image{height:220px}
+  /* TOP IMAGE (transparent image at top) */
+.top-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 10px;
+}
+
+.top-image img {
+  max-width: 320px; /* adjust size if you want bigger */
+  height: auto;
+  display: block;
+}
 }
